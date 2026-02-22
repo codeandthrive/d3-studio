@@ -1,0 +1,12 @@
+node_modules/
+
+# Local extraction / OCR sources (not needed for deployed website)
+Portfolio Reshma Muthuveetil.pdf
+eng.traineddata
+assets/images/pages/
+assets/images/source-pages/
+
+# Common temp files
+*.tmp
+Thumbs.db
+.DS_Store
