@@ -11,11 +11,13 @@
 06. Animations
 07. YouTubePopUp
 08. Testimonials owlCarousel
-09. Blog owlCarousel
-10. Team owlCarousel
-11. Clients owlCarousel
-12. Services owlCarousel
-13. Team owlCarousel
+09. Projects owlCarousel
+10. Project Page owlCarousel - NEW
+11. Blog owlCarousel
+12. Team owlCarousel
+13. Clients owlCarousel
+14. Services owlCarousel
+15. Team owlCarousel
 16. MagnificPopup (Image, Youtube, Vimeo and custom popup)
 17. Scroll back to top
 18. Slider
@@ -68,6 +70,29 @@ $(function() {
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
     });
+    
+    // Isotope Active
+	$('.bauen-project-items').imagesLoaded(function () {
+		// Add isotope on click filter function
+		$('.bauen-project-filter li').on('click', function () {
+			$(".bauen-project-filter li").removeClass("active");
+			$(this).addClass("active");
+			var selector = $(this).attr('data-filter');
+			$(".bauen-project-items").isotope({
+				filter: selector
+				, animationOptions: {
+					duration: 750
+					, easing: 'linear'
+					, queue: false
+				, }
+			});
+			return false;
+		});
+		$(".bauen-project-items").isotope({
+			itemSelector: '.single-item'
+			, layoutMode: 'masonry'
+		, });
+	});
     
     // Isotope Active Masonry Gallery
 	$('.bauen-gallery-items').imagesLoaded(function () {
@@ -154,6 +179,52 @@ $(function() {
             }
         }
     });
+    
+    // Projects owlCarousel
+    $('.projects .owl-carousel').owlCarousel({
+        loop: true
+        , margin: 30
+        , mouseDrag: true
+        , autoplay: false
+        , dots: true
+        , autoplayHoverPause:true
+        , responsiveClass: true
+        , responsive: {
+            0: {
+                items: 1
+            , }
+            , 600: {
+                items: 2
+            }
+            , 1000: {
+                items: 2
+            }
+        }
+    });
+    
+    // Project Page owlCarousel
+    $('.project-page .owl-carousel').owlCarousel({
+        loop: true
+        , margin: 30
+        , mouseDrag: true
+        , autoplay: false
+        , dots: false
+        , nav: true
+        , navText: ['<i class="ti-arrow-left" aria-hidden="true"></i>', '<i class="ti-arrow-right" aria-hidden="true"></i>']
+        , responsiveClass: true
+        , responsive: {
+            0: {
+                items: 1
+            , }
+            , 600: {
+                items: 1
+            }
+            , 1000: {
+                items: 1
+            }
+        }
+    });
+    
     
     // Blog owlCarousel
     $('.bauen-blog .owl-carousel').owlCarousel({
@@ -441,3 +512,4 @@ var CustomApp = {
 };
 CustomApp.init();
     
+
