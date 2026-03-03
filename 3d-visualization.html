@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>D3 Studio | 3D Visualization</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <meta name="description"
+        content="3D visualization service by D3 Studio: realistic models and interior layout visual outputs from plans.">
+    <meta name="keywords"
+        content="3D visualization, 3D modelling, interior layout visualization, presentation renders">
+    <meta name="author" content="D3 Studio">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="preloader-bg"></div>
+    <div id="preloader"><div id="preloader-status"><div class="preloader-position loader"><span></span></div></div></div>
+    <div class="progress-wrap cursor-pointer"><svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" /></svg></div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="logo-wrapper"><a class="logo" href="index.html"><h2>D3 Studio</h2></a></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="ti-menu"></i></span></button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Services <i class="ti-angle-down"></i></a>
+                        <ul class="dropdown-menu services-dropdown">
+                            <li><a href="working-drawings.html" class="dropdown-item"><span>Working Drawings</span></a></li>
+                            <li><a href="fabrication-drawings.html" class="dropdown-item"><span>Fabrication Drawings</span></a></li>
+                            <li><a href="fencing-drawings.html" class="dropdown-item"><span>Fencing Drawings</span></a></li>
+                            <li><a href="3d-visualization.html" class="dropdown-item active"><span>3D Visualization</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <section class="content-lines-wrapper"><div class="content-lines-inner"><div class="content-lines"></div></div></section>
+        <section class="banner-header banner-img valign bg-img bg-fixed" data-overlay-darkgray="5" data-background="assets/images/studio/sections/visualization-hero.jpg"></section>
+
+        <section class="about section-padding2">
+            <div class="container"><div class="row">
+                <div class="col-lg-6 col-md-12 mb-30 animate-box" data-animate-effect="fadeInUp">
+                    <h2 class="section-title">3D <span>Visualization</span></h2>
+                    <p>3D visualization/modelling converts plan information into realistic visual outputs for design
+                        communication.</p>
+                    <p>The service helps builders and designers present decisions clearly to their clients.</p>
+                    <p>Interior 3D layouts are used to study daylight, circulation, and ergonomic planning.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 animate-box" data-animate-effect="fadeInUp">
+                    <div class="about-img">
+                        <div class="img"><img src="assets/images/studio/sections/visualization-alt.jpg" class="img-fluid" alt="3D Visualization"></div>
+                        <div class="about-img-2 about-buro">Presentation and Design Communication</div>
+                    </div>
+                </div>
+            </div></div>
+        </section>
+
+        <section class="team section-padding">
+            <div class="container">
+                <div class="row"><div class="col-md-12"><h2 class="section-title">Included <span>Deliverables</span></h2></div></div>
+                <div class="row">
+                    <div class="col-md-6 mb-30"><div class="position"><div class="position-title">Realistic 3D Models</div><div class="position-location">Model views generated directly from plan drawings.</div></div></div>
+                    <div class="col-md-6 mb-30"><div class="position"><div class="position-title">Perspective Visuals</div><div class="position-location">Presentation-ready images for stakeholder communication.</div></div></div>
+                    <div class="col-md-6 mb-30"><div class="position"><div class="position-title">Client Presentation Support</div><div class="position-location">Visual outputs that improve client understanding and approvals.</div></div></div>
+                    <div class="col-md-6 mb-30"><div class="position"><div class="position-title">Interior Planning Studies</div><div class="position-location">Daylight, circulation, and ergonomic layout checks.</div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding pt-0 service-showcase">
+            <div class="container"><div class="row">
+                <div class="col-md-6 mb-30"><img src="assets/images/studio/sections/visualization-hero.jpg" class="img-fluid service-showcase-image" alt="3D View"></div>
+                <div class="col-md-6 mb-30"><img src="assets/images/studio/sections/visualization-interior.jpg" class="img-fluid service-showcase-image" alt="Interior Visual"></div>
+            </div></div>
+        </section>
+
+        <section class="testimonials">
+            <div class="background bg-img bg-fixed section-padding pb-0" data-background="assets/images/studio/sections/visualization-lighting.jpg" data-overlay-dark="4">
+                <div class="container"><div class="row"><div class="col-md-10"><div class="testimonials-box animate-box" data-animate-effect="fadeInUp"><div class="head-box"><h4>Need This Service?</h4></div><p>Share your plans and required output style to receive tailored 3D visuals for presentations and coordination.</p></div></div></div></div>
+            </div>
+        </section>
+
+        <footer class="main-footer dark">
+            <div class="container"><div class="row">
+                <div class="col-md-4 mb-30"><div class="item fotcont"><div class="fothead"><h6>Phone</h6></div><p>Available on request</p></div></div>
+                <div class="col-md-4 mb-30"><div class="item fotcont"><div class="fothead"><h6>Email</h6></div><p>contact@d3studio.design</p></div></div>
+                <div class="col-md-4 mb-30"><div class="item fotcont"><div class="fothead"><h6>Studio Base</h6></div><p>India | Working Internationally</p></div></div>
+            </div></div>
+            <div class="sub-footer"><div class="container"><div class="row"><div class="col-md-12 text-center"><p>&copy; 2026 D3 Studio<br>Drawing Documentation Studio</p></div></div></div></div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-migrate-3.5.0.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.isotope.v3.0.2.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/YouTubePopUp.js"></script>
+    <script src="js/before-after.js"></script>
+    <script src="js/vegas.slider.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
+
+
