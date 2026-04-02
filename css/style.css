@@ -1535,15 +1535,27 @@ hr {
 .about {
     padding-bottom: 90px;
 }
-.about .about-img img:hover {
-    transform: scale(0.95);
-}
 .about .about-img {
     position: relative;
 }
 .about .about-img .img {
     padding: 0 15px 30px 30px;
     position: relative;
+    min-height: 420px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #fff;
 }
 .about .about-img .img:before {
     content: '';
@@ -1557,7 +1569,25 @@ hr {
 .about .about-img .img img {
     position: relative;
     z-index: 2;
-    background: #272727;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    background: #fff;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.about .about-img:hover .img img {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
 }
 .about-img-2 {
     position: relative
@@ -1897,6 +1927,7 @@ hr {
     padding: 60px 30px;
     margin-bottom: 30px;
     position: relative;
+    height: 100%;
 }
 .services .item:hover {
     background: #323232;
@@ -1957,12 +1988,62 @@ hr {
     transition-duration: 0.8s;
     transition-timing-function: ease-in-out;
 }
-/* Drawing showcase image consistency */
-.service-showcase-image {
-    width: 100%;
-    height: 360px;
-    object-fit: cover;
+/* Shared image frames */
+.service-showcase-frame {
+    min-height: 360px;
+    padding: 20px;
+    background: #fff;
     border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.service-showcase-frame {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.service-showcase-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 320px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: center center;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    background: #fff;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.service-showcase-frame:hover .service-showcase-image {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+@media only screen and (max-width: 767px) {
+    .about .about-img .img {
+        min-height: 300px;
+    }
+    .service-showcase-frame {
+        min-height: 280px;
+        padding: 15px;
+    }
+    .service-showcase-image {
+        max-height: 250px;
+    }
 }
 
 
