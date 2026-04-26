@@ -776,23 +776,24 @@ blockquote cite:before {
     .navbar {
         padding-left: 0px;
         padding-right: 0px;
-        background: transparent;
+        background: #272727;
         padding-top: 0px;
         padding-bottom: 0px;
+        min-height: 76px;
     }
     .nav-scroll {
         background: #272727;
     }
     .logo-wrapper {
         float: left;
-        padding: 26px 0 26px 15px;
+        padding: 10px 0 10px 15px;
     }
     .nav-scroll .logo-wrapper {
-        padding: 22px 15px;
+        padding: 10px 0 10px 15px;
         background-color: transparent;
     }
     .nav-scroll .logo-img {
-        width: 120px;
+        width: 88px;
     }
     .navbar .logo {
         text-align: left;
@@ -801,16 +802,16 @@ blockquote cite:before {
     .nav-scroll .logo {}
     .logo-img {
         margin-bottom: 0px;
-        width: 120px;
+        width: 88px;
         padding: 0;
         transition: none;
         transform: none;
     }
     .navbar button {
-        margin-right: 0px;
+        margin-right: 15px;
         outline: none !important;
         background: transparent;
-        margin-top: 10px;
+        margin-top: 21px;
         border: none;
     }
     .navbar button:hover {
